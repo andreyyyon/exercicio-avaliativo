@@ -24,7 +24,7 @@ public class ClubUpdate {
     }
 
     private void menu() {
-        System.out.println("\n============ Clube Recrativo dos Pampas ============");
+        System.out.println("\n============== Clube Recrativo dos Pampas ==============");
         System.out.println("Você está no menu, digite a opção desejada: " +
                 "\n1- Gerar os cadastros" +
                 "\n2- Lista dos associados" +
@@ -46,6 +46,8 @@ public class ClubUpdate {
             totalDependents();
         } else if (choice == 5) {
             totalMascFem();
+        } else if (choice == 6) {
+            maiorSalario();
         } else {
             choice = 0;
         }
@@ -56,7 +58,7 @@ public class ClubUpdate {
         int i = input.nextInt();
         for (int x = 0; x < i; x++) {
             int u = x + 1;
-            System.out.println("============ Cadastro " + u + " ============");
+            System.out.println("============== Cadastro " + u + " ==============");
             System.out.println("Digite o nome do associado:");
             name = input.next();
             System.out.println("Digite o número do associado:");
@@ -103,7 +105,7 @@ public class ClubUpdate {
         if (data.size() == 0) {
             System.out.println("Ainda não existe cadastros de associados.");
         } else {
-            System.out.println("============ Lista dos Associados ============");
+            System.out.println("============== Lista dos Associados ==============");
             for (int i = 0; i < data.size(); i++) {
                 ClubUser user = data.get(i);
                 System.out.println("Nome: " + user.getName());
@@ -111,7 +113,7 @@ public class ClubUpdate {
                 System.out.println("Altura: " + user.getHeigth());
                 System.out.println("Salario: " + user.getWage());
                 System.out.println("Dependentes: " + user.getDependents());
-                System.out.println("=================================================");
+                System.out.println("===================================================");
             }
         }
         menu();
@@ -186,17 +188,27 @@ public class ClubUpdate {
         if (data.size() == 0) {
             System.out.println("Ainda não existe cadastros de associados.");
         } else {
-            List<ClubUser> wageList;
-            wageList = new ArrayList<>();
-            for (int i = 0; i < data.size(); i++) {
-                ClubUser user = data.get(i);
-                String name = user.getName();
-                Float wage = user.getWage();
-                wageList.add(user);
+            System.out.println("============== Associado com maior salário ==============" +
+                    "\n obs. se tiver dois associados com o maior salário igual," +
+                    "\n será mostrado o de todos os associados.");
+            data.sort(new WageComparator());
+            Collections.reverse(data);
+            if (data.get(0).getWage().equals(data.get(1).getWage())){
+                for (int i = 0; i < data.size(); i++){
+                    ClubUser user = data.get(i);
+                    System.out.println("===================================================");
+                    System.out.println("Nome: " + user.getName());
+                    System.out.println("Salário: " + user.getWage());
+                }
+            }else{
+                System.out.println("===================================================");
+                System.out.println("Nome: "+ data.get(0).getName());
+                System.out.println("Salário: " + data.get(0).getWage());
             }
 
-
         }
+        menu();
     }
 }
+
 

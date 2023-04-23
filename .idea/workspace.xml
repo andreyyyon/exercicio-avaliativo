@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21cf55f0-1e2d-42ef-a033-00ed091ecf9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application/ClubUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application/ClubUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application/teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Application/WageComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/ClubUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/ClubUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/teste.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +34,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "Console"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.ClubUpdate">
     <configuration name="ClubUpdate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Application.ClubUpdate" />
