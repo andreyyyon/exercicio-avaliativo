@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21cf55f0-1e2d-42ef-a033-00ed091ecf9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Application/WageComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Application/Class/Pessoas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Application/SoftwarePessoas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Methods/PessoasComparatorAltura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Methods/PessoasComparatorID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Methods/PessoasComparatorIMC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application/Class/ClubUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/Class/ClubUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Application/ClubUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application/ClubUpdate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application/teste.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +46,26 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ClubUpdate">
+  <component name="RunManager" selected="Application.SoftwarePessoas">
     <configuration name="ClubUpdate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Application.ClubUpdate" />
       <module name="avaliacao" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Methods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoftwarePessoas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application.SoftwarePessoas" />
+      <module name="avaliacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Application.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,6 +88,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SoftwarePessoas" />
         <item itemvalue="Application.ClubUpdate" />
         <item itemvalue="Application.teste" />
       </list>

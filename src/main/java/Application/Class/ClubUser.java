@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class ClubUser {
     private String name;
-    private Integer number = 0;
+    private Integer number;
     private String sex;
     private Float heigth;
     private Float wage;

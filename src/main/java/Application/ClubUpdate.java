@@ -6,7 +6,6 @@ import Methods.WageComparator;
 import java.util.*;
 
 public class ClubUpdate {
-    ClubUser user = new ClubUser();
     Scanner input = new Scanner(System.in);
     private static List<ClubUser> data;
     private int choice;
@@ -196,16 +195,16 @@ public class ClubUpdate {
                     "\n será mostrado o de todos os associados.");
             data.sort(new WageComparator());
             Collections.reverse(data);
-            if (data.get(0).getWage().equals(data.get(1).getWage())){
-                for (int i = 0; i < data.size(); i++){
+            if (data.get(0).getWage().equals(data.get(1).getWage())) {
+                for (int i = 0; i < data.size(); i++) {
                     ClubUser user = data.get(i);
                     System.out.println("===================================================");
                     System.out.println("Nome: " + user.getName());
                     System.out.println("Salário: " + user.getWage());
                 }
-            }else{
+            } else {
                 System.out.println("===================================================");
-                System.out.println("Nome: "+ data.get(0).getName());
+                System.out.println("Nome: " + data.get(0).getName());
                 System.out.println("Salário: " + data.get(0).getWage());
             }
 
@@ -214,4 +213,22 @@ public class ClubUpdate {
     }
 }
 
-
+//2- O Clube recreativo dos pampas resolveu fazer uma atualização cadastral de todos seus
+//        associados, e para isso ele contratou você para desenvolver um sistema para
+//        armazenar os dados de seus associados!
+//        O presidente do clube solicitou que no senso realizado ele precisa dos seguintes
+//        dados:
+//        Nome, número do associado, sexo (Masculino ou feminino), altura, salário, quantidade
+//        de filhos.
+//        Para isso seu sistema deve primeiro perguntar quantos sócios participaram do senso
+//        (N) e depois solicitar N vezes para o usuário digitar os dados do associado.
+//        Depois de inserir os dados o presidente quer alguns relatórios e digitara as opções
+//        para seu sistema gerar o relatório na tela.
+//        1- Lista de sócios (Nome, sexo, altura, salario, filhos)
+//        2- Média da altura dos associados
+//        3- Total de dependentes
+//        4- Quantidade de homens e mulheres e sua representatividade na associação em
+//        porcentagem ( X% de homens e X% de mulheres)
+//        5- Maior salário e nome de quem ganha o maior salário (se mais que um associado
+//        possui o mesmo maior salário deve imprimir todos)
+//        0- Encerra o programa
