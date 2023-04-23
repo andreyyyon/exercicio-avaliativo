@@ -1,5 +1,7 @@
 package Application;
 
+import Methods.WageComparator;
+
 import java.util.*;
 
 public class ClubUpdate {

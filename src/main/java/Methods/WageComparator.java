@@ -1,4 +1,6 @@
-package Application;
+package Methods;
+
+import Application.ClubUser;
 
 import java.util.Comparator;
 
