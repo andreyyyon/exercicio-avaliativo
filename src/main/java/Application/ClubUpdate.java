@@ -1,5 +1,6 @@
 package Application;
 
+import Application.Class.ClubUser;
 import Methods.WageComparator;
 
 import java.util.*;
